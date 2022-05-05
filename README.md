@@ -131,7 +131,7 @@ This example calculates present value using functions
 
 
 # Data Wrangling
-HPE STOCK PRICES 2021
+HPE stock prices 2021
 
 ```{r}
 dfRaw = read.csv("HPE.csv")
