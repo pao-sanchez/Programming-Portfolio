@@ -16,7 +16,7 @@ print (amount)
 ### Result:
 <img width="100" alt="Compound Interest" src="https://user-images.githubusercontent.com/98184898/166986211-d65867a8-af08-4e1d-a6f0-19dff4eb8058.png">
 
-## This example calculates compund interest using vairables, operators, and expressions
+This example calculates compund interest using vairables, operators, and expressions
 
 
 
@@ -42,10 +42,10 @@ netIncomeSolutionDataFrame = data.frame(
 )
 write.csv(netIncomeSolutionDataFrame, "data/Sanchez-Paola-Net-Income-Solution.csv")
 
-## Result:
+### Result:
 <img width="192" alt="Net Income" src="https://user-images.githubusercontent.com/98184898/166986812-bfabea60-80e8-464d-8497-c008ead18aad.png">
 
-### This is an example using File output/input (File O/I) and data frames to calculate net income
+This is an example using File output/input (File O/I) and data frames to calculate net income
 
 
 
