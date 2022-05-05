@@ -175,7 +175,6 @@ colnames(dfWrangle) = gsub("Volume", "volume", colnames(dfWrangle))
 write.csv(dfWrangle, filename, row.names = F, fileEncoding = "UTF-8")
 ```
 
-
 This is an emxample of data wrangling for HEP stock prices only in the year 2021
 
 
