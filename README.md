@@ -4,16 +4,22 @@
 Compund Interest
 
 ### Input
+```{r}
 principal = 10000
 rate = 0.15
 compoundings = 4
 time = 35
+```
 
 ### Processing
+```{r}
 amount = principal * (1+ (rate/compoundings))^ (compoundings * time)
+```
 
 ### Output
+```{r}
 print (amount)
+```
 
 ### Result:
 <img width="100" alt="Compound Interest" src="https://user-images.githubusercontent.com/98184898/166986211-d65867a8-af08-4e1d-a6f0-19dff4eb8058.png">
@@ -28,14 +34,19 @@ This example calculates compund interest using vairables, operators, and express
 Net Income
 
 ### Input
+```{r}
 netIncomeDataFrame = read.csv("data/Sanchez-Paola-Net-Income.csv")
 revenue = netIncomeDataFrame$revenue
 expenses = netIncomeDataFrame$expenses
+```
 
 ### Processing
+```{r}
 netIncome = revenue - expenses
+```
 
 ### Output
+```{r}
 print (netIncome)
 netIncomeSolutionDataFrame = data.frame(
   revenue = revenue,
@@ -43,6 +54,7 @@ netIncomeSolutionDataFrame = data.frame(
   netIncome = netIncome
 )
 write.csv(netIncomeSolutionDataFrame, "data/Sanchez-Paola-Net-Income-Solution.csv")
+```
 
 ### Result:
 <img width="192" alt="Net Income" src="https://user-images.githubusercontent.com/98184898/166986812-bfabea60-80e8-464d-8497-c008ead18aad.png">
@@ -54,14 +66,19 @@ This is an example using File output/input (File O/I) and data frames to calcula
 Amortized loan payment
 
 ### Input
+```{r}
 amountBorrowed = 250000
 periodicInterestRate = 0.004167
 numberOfPayments = 360
+```
 
 ### Processing
+```{r}
 amortizedLoanPayment = (amountBorrowed* periodicInterestRate) / (1-(1+ periodicInterestRate)^-numberOfPayments)
+```
 
 ### Output
+```{r}
 print (amortizedLoanPayment)
 if (amortizedLoanPayment<1000) {
   print ("very affordable")
@@ -70,6 +87,7 @@ if (amortizedLoanPayment<1000) {
 } else if (amortizedLoanPayment>2000) {
   print ("expensive")
 }
+```
 
 ### Result:
 <img width="157" alt="Amortized Loan Payment" src="https://user-images.githubusercontent.com/98184898/166985568-70e4d557-3d82-4bf1-a251-fdbf293ab3c8.png">
@@ -111,16 +129,22 @@ This is a guess Taylor Swift's age, game using while loop
 Present Value
 
 ### Processing
+```{r}
 calcPresentValue = function (futureValue, rateOfReturn, time) {
   presentValue = futureValue / (1+rateOfReturn)^time
   return (presentValue)
 }
+```
 
 ### Input
+```{r}
 ans = calcPresentValue (10057, 0.15, 5)
+```
 
 ### Output
+```{r}
 print (ans)
+```
 
 ### Result:
 <img width="121" alt="Present Value" src="https://user-images.githubusercontent.com/98184898/166987703-b036d5ba-0ae6-4f2c-ae9b-11affc2ce463.png">
