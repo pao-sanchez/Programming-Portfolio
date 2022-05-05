@@ -1,5 +1,5 @@
 # Variables, Operators, Types, Expressions
-compund Interest
+Compund Interest
 
 ### INPUT
 principal = 10000
